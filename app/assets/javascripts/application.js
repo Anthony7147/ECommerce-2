@@ -16,6 +16,19 @@
 //= require_tree .
 
 
+$(document).ready(function() {
+				$('ul a').click(function() {
+					var $anchor = $(this);
+				$('html, body').animate({
+					scrollTop: $($anchor.attr('href')).offset().top
+					}, 2000);
+					return false;
+					helpers : {
+
+					}
+				});
+			});
+
 $(function(){
 	$(".dropdown").hover(
 		function() {
@@ -29,3 +42,5 @@ $(function(){
 			$('b', this).toggleClass("caret caret-up");
 		});
 });
+
+			
