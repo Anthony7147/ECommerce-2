@@ -180,6 +180,11 @@ a.list-group-item.active small {
   .carousel-inner {
     height: 390px;
   }
+  
+  a:hover figcaption {
+    opacity: 0.8;
+    left: 0;
+    }
   /************************
   Footer
   ************************/
@@ -314,9 +319,12 @@ a.list-group-item.active small {
   a {
     color: #fff;
   }
-  a:hover figcaption {
-    opacity: 0.8;
-    left: 0;
-    color: #fff;
-    transition: all 0.7s;
+  .span4 img {
+    margin-right: 10px;
+    }
+  .span4 .img-left  {
+    float: left;
+  } 
+  .span4 .img-right {
+    float: right;
   }
